@@ -98,5 +98,24 @@ Finalmente, con el modelo obtenido luego del ajuste fino de hiperparámetros, se
 <p align="center">Figura 15: predicciones sobre el conjunto de test</h1>
 
 
+**Análisis utilizando SHAP values**:
 
+Para aportar mayor explicabilidad a las decisiones tomadas por el modelo desarrollado se realizó un análisis utilizando valores SHAP.
+
+A continuación se ve un gráfico de los valores SHAP para todas las características de entrada al modelo y también un gráfico específico para las características más importantes que se encontraron en el análisis.
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/SHAP_values_test.png" width="450" height="350">
+</p>
+<p align="center">Figura 16: valores SHAP obtenidos en el conjunto de test</h1>
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/SHAP_Humedad.png" width="800" height="350">
+</p>
+<p align="center">Figura 17: valores SHAP obtenidos para la variable humedad de semilla</h1>
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/SHAP_T_Lam.png" width="800" height="350">
+</p>
+<p align="center">Figura 18: valores SHAP obtenidos para la variable temperatura de laminado</h1>
 
