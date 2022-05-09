@@ -63,10 +63,39 @@ se realiza la importación de datos provenientes de un sistema SCADA y se estruc
 </p>
 <p align="center">Figura 10: métricas obtenidas sobre el set de test</h1>
 
+**Ajuste de hiperparámetros utilizando OPTUNA**:
+En base al análisis realizado se decidió utilizar un modelo de la familia XGBOOST. Para realizar el ajuste fino de los hiperparámetros se utilizó el framework OPTUNA, el cual aportó explicabilidad al impacto de cada hiparparámetro en la performance del modelo.
 
+A continuación se pueden ver algunas imágenes obtenidas durante el ajuste fino de hiperparámetros.
 
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/PARALLEL_COORD.png" width="800" height="350">
+</p>
+<p align="center">Figura 11: gráfico de coordenadas paralelas</h1>
 
-*Los avances que se muestran son preliminares y el proyecto se encuentra en pleno desarrollo*
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/OPT_HIST.png" width="800" height="350">
+</p>
+<p align="center">Figura 12: historial de optimización de HPs</h1>
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/HP_IMPORT.png" width="800" height="350">
+</p>
+<p align="center">Figura 13: importancia de los HPs para el modelo desarrollado</h1>
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/CONTOUR.png" width="800" height="350">
+</p>
+<p align="center">Figura 14: gráfico de contorno para un subconjunto en particular de HPs</h1>
+
+**Prueba en el conjunto de test**:
+
+Finalmente, con el modelo obtenido luego del ajuste fino de hiperparámetros, se realizó una prueba sobre el conjunto de test.
+
+<p align="center">
+<img src="https://github.com/AlexBarria/CEIA_project/blob/main/Images/PRED.png" width="800" height="350">
+</p>
+<p align="center">Figura 15: predicciones sobre el conjunto de test</h1>
 
 
 
